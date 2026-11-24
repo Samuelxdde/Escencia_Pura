@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esencia Pura · Cuidado capilar artesanal con romero</title>
+<meta name="description" content="Esencia Pura S.A.S.: cosmética y cuidado personal natural con romero. Línea capilar artesanal, todos a $38.000.">
+<meta property="og:title" content="Esencia Pura · Naturaleza que trasciende, pureza que se nota">
+<meta property="og:description" content="Cuidado capilar 100% artesanal y de origen natural, con romero.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1B382A; --moss:#2F5A41; --sage:#B7CBB0; --mist:#EEF3EA; --paper:#F8FAF5;
+  --ink:#1D2A22; --muted:#56655C; --flower:#8B8FD0; --flower-soft:#E4E5F6; --line:#D3DDCF;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.05rem;line-height:1.65}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;line-height:1.1;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--flower);outline-offset:3px;border-radius:6px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+
+/* Navegación */
+nav{position:sticky;top:0;z-index:20;background:rgba(27,56,42,.94);backdrop-filter:blur(8px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:3.75rem}
+nav .logo{font-family:Fraunces,Georgia,serif;font-size:1.3rem;color:#fff;text-decoration:none;font-weight:600}
+nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+nav ul a{color:var(--sage);text-decoration:none;font-weight:500;font-size:.95rem}
+nav ul a:hover{color:#fff}
+@media (max-width:600px){nav ul li:nth-child(-n+2){display:none}nav ul{gap:1rem}}
+
+/* Portada */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 85% 10%,#2F5A41 0%,#1B382A 55%,#12251C 100%);color:#fff;padding:5rem 0 6rem}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(3.2rem,12vw,7.5rem);letter-spacing:-.025em;animation:rise .9s ease both}
+.hero .tag{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(1.2rem,3vw,1.7rem);color:var(--sage);margin:1.25rem 0 .75rem;max-width:30rem}
+.hero p.lead{max-width:32rem;color:#D4E0D0;margin:0 0 2rem}
+.hero .sprig{position:absolute;right:-2rem;top:50%;width:min(34rem,70vw);transform:translateY(-50%) rotate(12deg);opacity:.9;z-index:1}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.9rem 1.6rem;border-radius:999px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.light{background:#fff;color:var(--forest)}
+.btn.ghost{border:2px solid var(--sage);color:#fff;margin-left:.5rem}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.badge{display:inline-block;background:var(--flower-soft);color:var(--forest);border-radius:999px;padding:.35rem 1rem;font-weight:600;font-size:.95rem;margin-bottom:1.5rem}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero h1{animation:none}.btn{transition:none}html{scroll-behavior:auto}}
+
+/* Quiénes somos */
+.about{padding:5rem 0 3rem}
+.about .grid{display:grid;gap:2.5rem;grid-template-columns:1fr;align-items:center}
+.about h2{font-size:clamp(2.2rem,6vw,3.4rem);margin-bottom:1.25rem}
+.about p{margin:0 0 1rem;max-width:36rem}
+.quote{background:var(--forest);color:#fff;border-radius:1.5rem;padding:2.5rem 2rem;position:relative}
+.quote::before{content:"“";font-family:Fraunces,Georgia,serif;font-size:6rem;line-height:1;color:var(--flower);position:absolute;top:.5rem;left:1.25rem}
+.quote small{display:block;color:var(--sage);font-size:.9rem;margin-bottom:.75rem;padding-top:2.25rem}
+.quote p{font-family:Fraunces,Georgia,serif;font-size:1.65rem;line-height:1.25;margin:0}
+
+.mv{padding:1rem 0 4rem}
+.mv .grid{display:grid;gap:1.5rem;grid-template-columns:1fr}
+.mv .box{background:var(--mist);border:1px solid var(--line);border-radius:1.25rem;padding:2rem}
+.mv h3{font-size:1.6rem;margin-bottom:.75rem;color:var(--moss)}
+.mv p{margin:0}
+
+/* Productos */
+.products{background:var(--mist);padding:5rem 0}
+.products h2{font-size:clamp(2.2rem,6vw,3.4rem);margin-bottom:.75rem}
+.products .intro{color:var(--muted);max-width:34rem;margin:0 0 3rem}
+.cards{display:grid;gap:1.25rem;grid-template-columns:1fr}
+.card{background:#fff;border:1px solid var(--line);border-radius:1.25rem;padding:1.75rem;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(27,56,42,.45)}
+.ico{display:grid;place-items:center;width:3.25rem;height:3.25rem;border-radius:50%;background:var(--flower-soft);font-size:1.6rem;margin-bottom:1rem}
+.card h3{font-size:1.45rem}
+.card .for{color:var(--flower);font-weight:600;font-size:.92rem;margin:.35rem 0 .9rem;filter:brightness(.75)}
+.card p{margin:0;color:var(--muted);font-size:1rem}
+.card ul{margin:0;padding-left:1.1rem;color:var(--muted);font-size:1rem}
+.card li{margin-bottom:.5rem}
+.card li strong{color:var(--ink)}
+.card.feat{background:var(--forest);border-color:var(--forest);color:#fff}
+.card.feat .ico{background:rgba(255,255,255,.12)}
+.card.feat .for{color:var(--sage);filter:none}
+.card.feat ul{color:#D4E0D0}
+.card.feat li strong{color:#fff}
+.price-note{margin-top:3rem;text-align:center;font-family:Fraunces,Georgia,serif;font-size:1.6rem;color:var(--forest)}
+.price-note span{color:var(--moss)}
+
+/* Contacto */
+.contact{padding:5rem 0;text-align:center}
+.contact h2{font-size:clamp(2.2rem,6vw,3.4rem);margin-bottom:1rem}
+.contact p{color:var(--muted);max-width:30rem;margin:0 auto 2rem}
+.links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+.links a{border:2px solid var(--moss);color:var(--forest);text-decoration:none;font-weight:600;padding:.8rem 1.4rem;border-radius:999px;transition:background .15s,color .15s}
+.links a:hover{background:var(--moss);color:#fff}
+.links a.wa{background:var(--moss);color:#fff}
+footer{background:var(--forest);color:var(--sage);text-align:center;padding:2rem 1.5rem;font-size:.92rem}
+footer strong{color:#fff;font-family:Fraunces,Georgia,serif;font-size:1.1rem}
+
+/* Botón flotante */
+.fab{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;background:#25A55A;color:#fff;text-decoration:none;font-weight:600;padding:.8rem 1.3rem;border-radius:999px;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
+
+@media (min-width:760px){
+  .about .grid{grid-template-columns:1.2fr 1fr;gap:4rem}
+  .mv .grid{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .card.feat{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr 1.4fr;gap:0 2rem;align-items:center}
+  .card.feat .ico{margin:0}
+}
+@media (min-width:1050px){.cards{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#inicio">Esencia Pura</a>
+    <ul>
+      <li><a href="#nosotros">Quiénes somos</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <svg class="sprig" viewBox="0 0 200 320" aria-hidden="true">
+    <defs>
+      <ellipse id="leaf" cx="0" cy="-17" rx="4.5" ry="19" fill="#5E8F6E"/>
+      <ellipse id="leaf2" cx="0" cy="-17" rx="4.5" ry="19" fill="#7FAE8C"/>
+    </defs>
+    <path d="M100 310 C96 220 104 120 100 24" stroke="#4C7A5C" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <g>
+      <use href="#leaf" transform="translate(99,285) rotate(-58)"/><use href="#leaf2" transform="translate(99,285) rotate(58)"/>
+      <use href="#leaf2" transform="translate(98,255) rotate(-55)"/><use href="#leaf" transform="translate(98,255) rotate(55)"/>
+      <use href="#leaf" transform="translate(98,225) rotate(-52)"/><use href="#leaf2" transform="translate(98,225) rotate(52)"/>
+      <use href="#leaf2" transform="translate(99,195) rotate(-50)"/><use href="#leaf" transform="translate(99,195) rotate(50)"/>
+      <use href="#leaf" transform="translate(101,165) rotate(-48)"/><use href="#leaf2" transform="translate(101,165) rotate(48)"/>
+      <use href="#leaf2" transform="translate(102,135) rotate(-46)"/><use href="#leaf" transform="translate(102,135) rotate(46)"/>
+      <use href="#leaf" transform="translate(102,105) rotate(-42)"/><use href="#leaf2" transform="translate(102,105) rotate(42)"/>
+      <use href="#leaf2" transform="translate(101,75) rotate(-38)"/><use href="#leaf" transform="translate(101,75) rotate(38)"/>
+      <use href="#leaf" transform="translate(100,50) rotate(-30)"/><use href="#leaf2" transform="translate(100,50) rotate(30)"/>
+    </g>
+    <g fill="#8B8FD0"><circle cx="100" cy="22" r="5"/><circle cx="92" cy="34" r="4"/><circle cx="108" cy="34" r="4"/><circle cx="100" cy="44" r="3.5" fill="#A9ACE6"/></g>
+  </svg>
+  <div class="wrap">
+    <span class="badge">Todos a $38.000</span>
+    <h1>Esencia<br>Pura</h1>
+    <p class="tag">Naturaleza que trasciende, pureza que se nota.</p>
+    <p class="lead">Cuidado capilar 100% artesanal y de origen natural, con romero como protagonista.</p>
+    <a class="btn light" href="https://wa.me/message/LFUHWPHW4DCRB1" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    <a class="btn ghost" href="#productos">Ver productos</a>
+  </div>
+</header>
+
+<section class="about" id="nosotros">
+  <div class="wrap grid">
+    <div>
+      <h2>Quiénes somos</h2>
+      <p>En <strong>Esencia Pura S.A.S.</strong> creamos cosmética y cuidado personal natural con el romero como protagonista, combinado con ingredientes botánicos para cuidar el cabello y la piel de forma consciente y sostenible.</p>
+    </div>
+    <div class="quote">
+      <small>Línea capilar</small>
+      <p>Naturaleza que trasciende, pureza que se nota.</p>
+    </div>
+  </div>
+</section>
+
+<section class="mv">
+  <div class="wrap grid">
+    <div class="box">
+      <h3>Misión</h3>
+      <p>Elaborar y ofrecer productos de cuidado capilar y personal 100% artesanales y de origen natural, destacando las propiedades botánicas de ingredientes como el romero para brindar nutrición y bienestar real. Entregamos fórmulas de alta calidad que respetan la salud del cabello y del medio ambiente, con transparencia, cercanía y confianza en cada producto.</p>
+    </div>
+    <div class="box">
+      <h3>Visión</h3>
+      <p>Convertirnos, durante nuestros primeros años, en la marca de referencia local en cuidado capilar artesanal, reconocida por la efectividad de nuestras fórmulas de romero, la fidelidad de nuestros clientes y el compromiso absoluto con la calidad natural.</p>
+    </div>
+  </div>
+</section>
+
+<main class="products" id="productos">
+  <div class="wrap">
+    <h2>Nuestros productos</h2>
+    <p class="intro">Todos llevan romero como base. Elige la combinación que mejor se ajuste a tu cabello.</p>
+
+    <div class="cards">
+      <article class="card feat">
+        <div class="ico">🌿</div>
+        <div><h3>Romero</h3><p class="for">La fórmula base</p></div>
+        <ul>
+          <li><strong>Fortalecer y estimular:</strong> favorece un cuero cabelludo sano y reduce el quiebre.</li>
+          <li><strong>Equilibrar:</strong> ayuda a controlar el exceso de grasa y aporta frescura.</li>
+          <li><strong>Dar brillo:</strong> mejora la suavidad y el aspecto revitalizado con el uso constante.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="ico">🥑</div>
+        <h3>Romero y aguacate</h3><p class="for">Nutrición profunda</p>
+        <ul>
+          <li><strong>Frena la caída y estimula el crecimiento:</strong> el romero activa la circulación en la raíz.</li>
+          <li><strong>Nutrición e hidratación:</strong> el aguacate repara las puntas secas y maltratadas.</li>
+          <li><strong>Brillo y suavidad:</strong> sella la fibra, disminuye el frizz y facilita el peinado.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="ico">🌱</div>
+        <h3>Romero y jengibre</h3><p class="for">Cabello graso y con caspa</p>
+        <ul>
+          <li><strong>Control de la grasa:</strong> regulan el sebo y dejan el cabello limpio y ligero por más tiempo.</li>
+          <li><strong>Frena la caída por quiebre:</strong> fortalecen el tallo capilar.</li>
+          <li><strong>Anticaspa y purificante:</strong> propiedades antisépticas que alivian el picor y desinfectan el cuero cabelludo.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="ico">🌺</div>
+        <h3>Romero y Zingiber spectabile</h3><p class="for">Cuero cabelludo sensible</p>
+        <ul>
+          <li><strong>Alivio de la irritación y la descamación:</strong> compuestos antiinflamatorios y antimicrobianos que reducen la picazón y previenen la caspa.</li>
+          <li><strong>Fortalecimiento directo:</strong> antioxidantes y minerales que protegen los folículos.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="ico">🪴</div>
+        <h3>Romero y aloe vera</h3><p class="for">Hidratación ligera</p>
+        <p>Estimula el crecimiento, frena la caída y equilibra el cuero cabelludo. El aloe vera hidrata profundamente, controla el frizz y aporta suavidad y brillo natural sin dejar sensación pesada ni grasosa.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico">✨</div>
+        <h3>Romero y argán</h3><p class="for">Puntas maltratadas</p>
+        <p>Fortalece el folículo y frena la caída. El aceite de argán nutre profundamente, repara las puntas abiertas, controla el frizz y devuelve el brillo y la sedosidad natural al cabello maltratado.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico">🧅</div>
+        <h3>Romero y cebolla roja</h3><p class="for">Fuerza desde la raíz</p>
+        <p>Potencia la vitalidad desde la raíz, ayudando a fortalecer el folículo, mejorar la resistencia de la hebra y mantener el cuero cabelludo limpio y equilibrado.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico">🌾</div>
+        <h3>Romero y linaza</h3><p class="for">Definición y suavidad</p>
+        <p>Estimula el crecimiento, fortalece la raíz y frena la caída. La linaza aporta hidratación ligera, define el cabello, controla el frizz y deja suavidad y brillo natural sin apelmazar.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico">🥥</div>
+        <h3>Romero y aceite de coco</h3><p class="for">Protección de la fibra</p>
+        <p>Une el estímulo revitalizante de la raíz con una nutrición profunda que protege la fibra capilar, ayuda a reducir el quiebre y aporta suavidad y brillo natural.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico">🥕</div>
+        <h3>Romero y zanahoria</h3><p class="for">Contra la resequedad</p>
+        <p>La zanahoria aporta betacarotenos, vitaminas y antioxidantes que nutren la fibra capilar, combaten la resequedad, ayudan a prevenir el quiebre y devuelven suavidad y brillo natural.</p>
+      </article>
+
+      <article class="card">
+        <div class="ico">🍌</div>
+        <h3>Romero y banano</h3><p class="for">Elasticidad y brillo</p>
+        <p>Reúne la estimulación y el fortalecimiento desde la raíz con una nutrición envolvente que ayuda a combatir la resequedad, mejorar la elasticidad y dar brillo natural al cabello.</p>
+      </article>
+    </div>
+
+    <p class="price-note">Cada producto: <span>$38.000</span></p>
+  </div>
+</main>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <h2>Haz tu pedido</h2>
+    <p>Escríbenos por WhatsApp o síguenos en redes para conocer las novedades.</p>
+    <div class="links">
+      <a class="wa" href="https://wa.me/message/LFUHWPHW4DCRB1" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/esenciapura222?evlk=MWRrcnhudGhsNjM5bg==" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@esencia.pura208" target="_blank" rel="noopener">TikTok</a>
+      <a href="mailto:esenciapura2027@gmail.com">esenciapura2027@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>Esencia Pura S.A.S.</strong><br>
+  Naturaleza que trasciende, pureza que se nota.
+</footer>
+
+<a class="fab" href="https://wa.me/message/LFUHWPHW4DCRB1" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">WhatsApp</a>
+
+</body>
+</html>
